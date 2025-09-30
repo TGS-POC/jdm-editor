@@ -6,8 +6,6 @@ export default {
     { format: 'cjs', file: './dist/index.cjs' },
     { format: 'es', file: './dist/index.js' },
   ],
-  external(id) {
-    return !/^[\.\/]/.test(id);
-  },
+  external: ['@lezer/lr', '@lezer/common', '@lezer/highlight'],
   plugins: [nodeResolve()],
 };
