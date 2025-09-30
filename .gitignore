@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+dist
+/node_modules
+node_modules
+/target
+
+# Ignore
+*.log*
+*.tgz
+docs
